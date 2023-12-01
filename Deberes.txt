@@ -1,0 +1,12 @@
+Deberes:
+
+Modelo:
++ Hacer resto de cartas
++ Modelo.Tablero matriz de dos dimensiones
+
+
+Controlador:
+
+
+Vista:
++ Imagenes de toda la interfaz grafica (Modelo.Tablero, cartas de ambos lados, icono
