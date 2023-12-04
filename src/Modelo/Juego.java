@@ -2,6 +2,7 @@ package Modelo;
 
 import java.util.ArrayList;
 import java.util.List;
+import Controlador.Controlador;
 
 public class Juego {
     private int rondas;
@@ -9,8 +10,10 @@ public class Juego {
     private Mazo mazo;
     private Tablero tablero;
     private Jugador jugadorActual;
+    private Controlador controlador;
 
-    public Juego (){
+    public Juego (Controlador controlador){
+        this.controlador = controlador;
         this.jugadores = new ArrayList<>();
         this.mazo = new Mazo();
         this.tablero = new Tablero(this);

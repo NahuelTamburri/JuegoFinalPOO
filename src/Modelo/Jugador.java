@@ -86,13 +86,13 @@ public class Jugador {
     public boolean evaluarCarta (Carta carta, int x, int y) {
         if (carta instanceof CartaTunel) {
             if (pico && farol && carro) {
-                return tablero.jugarCarta(carta, x, y);
+                return tablero.jugarCarta(carta, x, y,this);
             }
         }
         if (carta instanceof CartaAccion) {
             CartaAccion accion = (CartaAccion) carta;
             if (accion.isDerrumbe() || accion.isMapa()){
-                return tablero.jugarCarta(carta, x, y);
+                return tablero.jugarCarta(carta, x, y, this);
             }
         }
         return false;
