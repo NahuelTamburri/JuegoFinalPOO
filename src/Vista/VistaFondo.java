@@ -38,6 +38,7 @@ public class VistaFondo{
         JButton reglas = new JButton("Reglas del juego");
         JButton salir = new JButton("Salir");
         nuevo.addActionListener(e -> cardLayout.show(panel, "juego"));
+        nuevo.setIcon(new ImageIcon("Imagenes/Accion Dorso.png"));
         //cargar.addActionListener(e -> controlador.cargarPartida);
         reglas.addActionListener(e -> {
             try {
